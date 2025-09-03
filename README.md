@@ -46,7 +46,6 @@ service TodoAnalytics {
 message StatsResponse {
   int32 active_tasks = 1;
   int32 completed_tasks = 2;
-  int32 total_tasks = 3;
 }
 ```
 ### Unit тесты
