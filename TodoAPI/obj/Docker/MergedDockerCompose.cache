@@ -1,0 +1,119 @@
+name: todo2460834935703478523
+services:
+  postgres:
+    container_name: todo-postgres
+    environment:
+      POSTGRES_DB: todo_db
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U postgres
+      timeout: 5s
+      interval: 10s
+      retries: 5
+    image: postgres:14
+    networks:
+      todo-network: null
+    ports:
+      - mode: ingress
+        target: 5432
+        published: "5432"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: volume
+        source: postgres_data
+        target: /var/lib/postgresql/data
+        volume: {}
+  rabbitmq:
+    container_name: todo-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_PASS: guest
+      RABBITMQ_DEFAULT_USER: guest
+    image: rabbitmq:3-management
+    networks:
+      todo-network: null
+    ports:
+      - mode: ingress
+        target: 5672
+        published: "5672"
+        protocol: tcp
+      - mode: ingress
+        target: 15672
+        published: "15672"
+        protocol: tcp
+    restart: unless-stopped
+  redis:
+    container_name: todo-redis
+    image: redis:7
+    networks:
+      todo-network: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+    restart: unless-stopped
+  todoapi:
+    build:
+      context: C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPI
+      dockerfile: Dockerfile
+    container_name: todo-api
+    depends_on:
+      postgres:
+        condition: service_healthy
+        required: true
+      rabbitmq:
+        condition: service_started
+        required: true
+      redis:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      ConnectionStrings__Postgres: Host=postgres;Database=todo_db;Username=postgres;Password=postgres
+      RabbitMq__Host: rabbitmq
+      RabbitMq__Password: guest
+      RabbitMq__User: guest
+      Redis__Connection: redis:6379
+    networks:
+      todo-network: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "5000"
+        protocol: tcp
+      - mode: ingress
+        target: 5001
+        published: "5001"
+        protocol: tcp
+      - mode: ingress
+        target: 80
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: C:\Users\Ardor\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Ardor\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  todo-network:
+    name: todo2460834935703478523_todo-network
+    driver: bridge
+volumes:
+  postgres_data:
+    name: todo2460834935703478523_postgres_data

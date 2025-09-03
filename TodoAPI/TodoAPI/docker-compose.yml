@@ -1,0 +1,77 @@
+﻿version: "3.9"
+
+services:
+  todo-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: todo-api
+    ports:
+      - "5000:80"     # HTTP API
+      - "5001:5001"   # gRPC (HTTP/2)
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      rabbitmq:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__Postgres: "Host=postgres;Database=todo_db;Username=postgres;Password=postgres"
+      Redis__Connection: "redis:6379"
+      RabbitMq__Host: "rabbitmq"
+      RabbitMq__User: "guest"
+      RabbitMq__Password: "guest"
+    restart: unless-stopped
+    networks:
+      - todo-network
+
+  postgres:
+    image: postgres:14
+    container_name: todo-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: todo_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - todo-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7
+    container_name: todo-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    networks:
+      - todo-network
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: todo-rabbitmq
+    restart: unless-stopped
+    ports:
+      - "5672:5672"   # RabbitMQ
+      - "15672:15672" # Web UI
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    networks:
+      - todo-network
+
+volumes:
+  postgres_data:
+
+networks:
+  todo-network:
+    driver: bridge

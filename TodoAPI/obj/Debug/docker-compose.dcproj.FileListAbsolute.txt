@@ -1,0 +1,1 @@
+C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPI\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

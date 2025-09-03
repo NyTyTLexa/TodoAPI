@@ -1,0 +1,2 @@
+obj\Debug\net6.0\Protos/Todoanalytics.cs \
+obj\Debug\net6.0\Protos/TodoanalyticsGrpc.cs: Protos/todoanalytics.proto
