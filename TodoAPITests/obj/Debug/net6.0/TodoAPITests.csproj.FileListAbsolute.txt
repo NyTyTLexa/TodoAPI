@@ -158,3 +158,4 @@ C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPITests\obj\Debug\net6.0\TodoAPITests
 C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPITests\obj\Debug\net6.0\TodoAPITests.genruntimeconfig.cache
 C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPITests\obj\Debug\net6.0\ref\TodoAPITests.dll
 C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPITests\obj\Debug\net6.0\TodoAPITests.sourcelink.json
+C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPITests\bin\Debug\net6.0\Humanizer.dll

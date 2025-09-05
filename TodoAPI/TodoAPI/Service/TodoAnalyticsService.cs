@@ -14,8 +14,8 @@ public class TodoAnalyticsService : TodoAnalytics.TodoAnalyticsBase
     {
         var tasks = _dbContext.Tasks;
 
-        int activeCount = await tasks.CountAsync(a => a.Status.ToLower() == "active");
-        int completedCount = await tasks.CountAsync(a => a.Status.ToLower() == "completed");
+        int activeCount = await tasks.CountAsync(a => a.Status.Equals("active"));
+        int completedCount = await tasks.CountAsync(a => a.Status.Equals("completed"));
 
         var response = new StatsResponse
         {

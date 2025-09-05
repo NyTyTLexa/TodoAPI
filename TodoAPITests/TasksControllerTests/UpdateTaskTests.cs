@@ -4,6 +4,7 @@ using Microsoft.Extensions.Caching.Distributed;
 using Moq;
 using TodoAPI.Controllers;
 using TodoAPI.Data;
+using TodoAPI.Enum;
 using TodoAPI.Interface;
 using TodoAPI.Models;
 using TodoAPI.Service;
@@ -42,11 +43,11 @@ public class UpdateTaskTests
     {
         // Arrange
         using var context = CreateInMemoryContext();
-        var existingTask = new Tasks { Id = 1, Title = "Original", Status = "pending" };
+        var existingTask = new Tasks { Id = 1, Title = "Original", Status =TasksStatus.active };
         context.Tasks.Add(existingTask);
         await context.SaveChangesAsync();
 
-        var updatedTask = new Tasks { Id = 1, Title = "Updated", Status = "pending" };
+        var updatedTask = new Tasks { Id = 1, Title = "Updated", Status = TasksStatus.active };
         var controller = new TasksController(context, _cacheMock.Object, _cacheServiceMock.Object, _rabbitMqServiceMock.Object);
 
         // Act
@@ -70,11 +71,11 @@ public class UpdateTaskTests
     {
         // Arrange
         using var context = CreateInMemoryContext();
-        var existingTask = new Tasks { Id = 1, Title = "Task", Status = "pending" };
+        var existingTask = new Tasks { Id = 1, Title = "Task", Status = TasksStatus.active };
         context.Tasks.Add(existingTask);
         await context.SaveChangesAsync();
 
-        var updatedTask = new Tasks { Id = 1, Title = "Task", Status = "completed" };
+        var updatedTask = new Tasks { Id = 1, Title = "Task", Status = TasksStatus.completed };
         var controller = new TasksController(context, _cacheMock.Object, _cacheServiceMock.Object, _rabbitMqServiceMock.Object);
 
         // Act

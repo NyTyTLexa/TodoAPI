@@ -3,12 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\service\\todoanalyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\service\\todoanalyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\repository\\sqltaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\repository\\sqltaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BE3DC75-9C77-43A9-A5BE-31D888C9AE08}|..\\TodoAPITests\\TodoAPITests.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapitests\\taskscontrollertests\\createtasktests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\enum\\tasksstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\enum\\tasksstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\enum\\tasksstatus.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\enum\\tasksstatus.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BE3DC75-9C77-43A9-A5BE-31D888C9AE08}|..\\TodoAPITests\\TodoAPITests.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapitests\\taskscontrollertests\\deletetasktests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -16,9 +35,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BE3DC75-9C77-43A9-A5BE-31D888C9AE08}|..\\TodoAPITests\\TodoAPITests.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapitests\\taskscontrollertests\\createtasktests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +53,6 @@
       "AbsoluteMoniker": "D:0:0:{4BE3DC75-9C77-43A9-A5BE-31D888C9AE08}|..\\TodoAPITests\\TodoAPITests.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapitests\\taskscontrollertests\\getalltaskstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\service\\todoanalyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\service\\todoanalyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\service\\rediscacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\service\\rediscacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,20 +61,8 @@
       "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\service\\rabbitmqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\repository\\sqltaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\repository\\sqltaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\interface\\icacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\interface\\icacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D3DA4B0-C44B-4E4D-B789-23D2F301A7C0}|TodoAPI\\TodoAPI.csproj|c:\\users\\ardor\\desktop\\test\\testintis\\todoapi\\todoapi\\models\\rabbitmqsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -151,33 +151,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "TasksStatus.cs",
               "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Enum\\TasksStatus.cs",
               "RelativeDocumentMoniker": "TodoAPI\\Enum\\TasksStatus.cs",
               "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Enum\\TasksStatus.cs",
               "RelativeToolTip": "TodoAPI\\Enum\\TasksStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T16:16:22.719Z",
+              "WhenOpened": "2025-09-05T16:22:51.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Program.cs",
-              "RelativeDocumentMoniker": "TodoAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Program.cs",
-              "RelativeToolTip": "TodoAPI\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T11:17:58.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "CreateTaskTests.cs",
               "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\CreateTaskTests.cs",
               "RelativeDocumentMoniker": "..\\TodoAPITests\\TasksControllerTests\\CreateTaskTests.cs",
@@ -190,46 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DeleteTaskTests.cs",
-              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\DeleteTaskTests.cs",
-              "RelativeDocumentMoniker": "..\\TodoAPITests\\TasksControllerTests\\DeleteTaskTests.cs",
-              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\DeleteTaskTests.cs",
-              "RelativeToolTip": "..\\TodoAPITests\\TasksControllerTests\\DeleteTaskTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T12:08:30.733Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetTasksTests.cs",
-              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\GetTasksTests.cs",
-              "RelativeDocumentMoniker": "..\\TodoAPITests\\TasksControllerTests\\GetTasksTests.cs",
-              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\GetTasksTests.cs",
-              "RelativeToolTip": "..\\TodoAPITests\\TasksControllerTests\\GetTasksTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T12:01:14.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GetAllTasksTests.cs",
-              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\GetAllTasksTests.cs",
-              "RelativeDocumentMoniker": "..\\TodoAPITests\\TasksControllerTests\\GetAllTasksTests.cs",
-              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\GetAllTasksTests.cs",
-              "RelativeToolTip": "..\\TodoAPITests\\TasksControllerTests\\GetAllTasksTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T11:54:59.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "GetTaskTests.cs",
               "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\GetTaskTests.cs",
               "RelativeDocumentMoniker": "..\\TodoAPITests\\TasksControllerTests\\GetTaskTests.cs",
@@ -237,12 +185,11 @@
               "RelativeToolTip": "..\\TodoAPITests\\TasksControllerTests\\GetTaskTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T12:08:29.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:08:29.104Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "UpdateTaskTests.cs",
               "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\UpdateTaskTests.cs",
               "RelativeDocumentMoniker": "..\\TodoAPITests\\TasksControllerTests\\UpdateTaskTests.cs",
@@ -250,12 +197,11 @@
               "RelativeToolTip": "..\\TodoAPITests\\TasksControllerTests\\UpdateTaskTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T12:08:28.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:08:28.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "TodoAPI\\Data\\AppDbContext.cs",
@@ -263,103 +209,24 @@
               "RelativeToolTip": "TodoAPI\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T11:42:53.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-02T11:42:53.693Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Tasks.cs",
               "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Models\\Tasks.cs",
               "RelativeDocumentMoniker": "TodoAPI\\Models\\Tasks.cs",
               "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Models\\Tasks.cs",
               "RelativeToolTip": "TodoAPI\\Models\\Tasks.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-02T11:42:52.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TodoAnalyticsService.cs",
-              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Service\\TodoAnalyticsService.cs",
-              "RelativeDocumentMoniker": "TodoAPI\\Service\\TodoAnalyticsService.cs",
-              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Service\\TodoAnalyticsService.cs",
-              "RelativeToolTip": "TodoAPI\\Service\\TodoAnalyticsService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T10:01:48.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RedisCacheService.cs",
-              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Service\\RedisCacheService.cs",
-              "RelativeDocumentMoniker": "TodoAPI\\Service\\RedisCacheService.cs",
-              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Service\\RedisCacheService.cs",
-              "RelativeToolTip": "TodoAPI\\Service\\RedisCacheService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T08:57:11.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RabbitMqService.cs",
-              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Service\\RabbitMqService.cs",
-              "RelativeDocumentMoniker": "TodoAPI\\Service\\RabbitMqService.cs",
-              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Service\\RabbitMqService.cs",
-              "RelativeToolTip": "TodoAPI\\Service\\RabbitMqService.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T09:29:46.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SQLTaskRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Repository\\SQLTaskRepository.cs",
-              "RelativeDocumentMoniker": "TodoAPI\\Repository\\SQLTaskRepository.cs",
-              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Repository\\SQLTaskRepository.cs",
-              "RelativeToolTip": "TodoAPI\\Repository\\SQLTaskRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T15:32:51.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Interface\\IRepository.cs",
-              "RelativeDocumentMoniker": "TodoAPI\\Interface\\IRepository.cs",
-              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Interface\\IRepository.cs",
-              "RelativeToolTip": "TodoAPI\\Interface\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T16:12:40.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ICacheService.cs",
-              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Interface\\ICacheService.cs",
-              "RelativeDocumentMoniker": "TodoAPI\\Interface\\ICacheService.cs",
-              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Interface\\ICacheService.cs",
-              "RelativeToolTip": "TodoAPI\\Interface\\ICacheService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T09:08:48.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 6,
               "Title": "TasksController.cs",
               "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Controllers\\TasksController.cs",
               "RelativeDocumentMoniker": "TodoAPI\\Controllers\\TasksController.cs",
@@ -372,6 +239,129 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Interface\\IRepository.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Interface\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Interface\\IRepository.cs",
+              "RelativeToolTip": "TodoAPI\\Interface\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T16:12:40.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SQLTaskRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Repository\\SQLTaskRepository.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Repository\\SQLTaskRepository.cs",
+              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Repository\\SQLTaskRepository.cs*",
+              "RelativeToolTip": "TodoAPI\\Repository\\SQLTaskRepository.cs*",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAUwB4AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T15:32:51.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TodoAnalyticsService.cs",
+              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Service\\TodoAnalyticsService.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Service\\TodoAnalyticsService.cs",
+              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Service\\TodoAnalyticsService.cs",
+              "RelativeToolTip": "TodoAPI\\Service\\TodoAnalyticsService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvxgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T10:01:48.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GetAllTasksTests.cs",
+              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\GetAllTasksTests.cs",
+              "RelativeDocumentMoniker": "..\\TodoAPITests\\TasksControllerTests\\GetAllTasksTests.cs",
+              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\GetAllTasksTests.cs",
+              "RelativeToolTip": "..\\TodoAPITests\\TasksControllerTests\\GetAllTasksTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:54:59.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GetTasksTests.cs",
+              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\GetTasksTests.cs",
+              "RelativeDocumentMoniker": "..\\TodoAPITests\\TasksControllerTests\\GetTasksTests.cs",
+              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\GetTasksTests.cs",
+              "RelativeToolTip": "..\\TodoAPITests\\TasksControllerTests\\GetTasksTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T12:01:14.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DeleteTaskTests.cs",
+              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\DeleteTaskTests.cs",
+              "RelativeDocumentMoniker": "..\\TodoAPITests\\TasksControllerTests\\DeleteTaskTests.cs",
+              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPITests\\TasksControllerTests\\DeleteTaskTests.cs",
+              "RelativeToolTip": "..\\TodoAPITests\\TasksControllerTests\\DeleteTaskTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T12:08:30.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Program.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Program.cs",
+              "RelativeToolTip": "TodoAPI\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T11:17:58.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RedisCacheService.cs",
+              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Service\\RedisCacheService.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Service\\RedisCacheService.cs",
+              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Service\\RedisCacheService.cs",
+              "RelativeToolTip": "TodoAPI\\Service\\RedisCacheService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T08:57:11.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RabbitMqService.cs",
+              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Service\\RabbitMqService.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Service\\RabbitMqService.cs",
+              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Service\\RabbitMqService.cs",
+              "RelativeToolTip": "TodoAPI\\Service\\RabbitMqService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T09:29:46.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ICacheService.cs",
+              "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Interface\\ICacheService.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Interface\\ICacheService.cs",
+              "ToolTip": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Interface\\ICacheService.cs",
+              "RelativeToolTip": "TodoAPI\\Interface\\ICacheService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T09:08:48.696Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 17,
               "Title": "RabbitMqSettings.cs",
               "DocumentMoniker": "C:\\Users\\Ardor\\Desktop\\Test\\TestIntis\\TodoAPI\\TodoAPI\\Models\\RabbitMqSettings.cs",
@@ -380,8 +370,7 @@
               "RelativeToolTip": "TodoAPI\\Models\\RabbitMqSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T09:31:39.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T09:31:39.178Z"
             },
             {
               "$type": "Document",
@@ -393,8 +382,7 @@
               "RelativeToolTip": "..\\.gitignore",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-03T13:32:55.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T13:32:55.545Z"
             },
             {
               "$type": "Document",

@@ -24,11 +24,11 @@ namespace TodoAPI.Repository;
 
             if (!string.IsNullOrEmpty(search))
             {
-                query = query.Where(t => t.Title.ToLower().Contains(search.ToLower()));
+                query = query.Where(t => t.Title.Equals(search.ToLower()));
             }
             if (!string.IsNullOrEmpty(status))
             {
-                query = query.Where(t => t.Status.ToLower() == status.ToLower());
+                query = query.Where(t => t.Status.Equals(status.ToLower()));
             }
 
             var total = await query.CountAsync();

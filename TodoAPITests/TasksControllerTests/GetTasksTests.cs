@@ -13,6 +13,7 @@ using TodoAPI.Models;
 using TodoAPITests.Models;
 using Microsoft.Extensions.Caching.Distributed;
 using TodoAPI.Interface;
+using TodoAPI.Enum;
 namespace TodoAPITests.TasksControllerTests;
 public class GetTasksTests
 {
@@ -100,8 +101,8 @@ public class GetTasksTests
     {
         // Arrange
         using var context = CreateInMemoryContext();
-        var task1 = new Tasks { Id = 1, Title = "Task 1", Status = "pending", CreatedAt = DateTime.UtcNow };
-        var task2 = new Tasks { Id = 2, Title = "Task 2", Status = "completed", CreatedAt = DateTime.UtcNow };
+        var task1 = new Tasks { Id = 1, Title = "Task 1", Status = TasksStatus.active, CreatedAt = DateTime.UtcNow };
+        var task2 = new Tasks { Id = 2, Title = "Task 2", Status = TasksStatus.active, CreatedAt = DateTime.UtcNow };
         context.Tasks.AddRange(task1, task2);
         await context.SaveChangesAsync();
 
