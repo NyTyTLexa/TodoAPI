@@ -157,3 +157,4 @@ C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPITests\obj\Debug\net6.0\refint\TodoA
 C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPITests\obj\Debug\net6.0\TodoAPITests.pdb
 C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPITests\obj\Debug\net6.0\TodoAPITests.genruntimeconfig.cache
 C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPITests\obj\Debug\net6.0\ref\TodoAPITests.dll
+C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPITests\obj\Debug\net6.0\TodoAPITests.sourcelink.json

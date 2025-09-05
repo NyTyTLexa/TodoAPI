@@ -8,9 +8,11 @@ using Microsoft.Extensions.Caching.Distributed;
 using System.Text.Json;
 using TodoAPI.Service;
 using System.Threading.Tasks;
+using TodoAPI.Interface;
+using TodoAPI.Repository;
 
-namespace TodoAPI.Controllers
-{
+namespace TodoAPI.Controllers;
+
     [ApiController]
     [Route("api/[controller]")]
     public class TasksController : ControllerBase
@@ -19,6 +21,7 @@ namespace TodoAPI.Controllers
         private readonly IDistributedCache _cache;
         private readonly ICacheService _cacheService;
         private readonly RabbitMqService _rabbitMqService;
+        private readonly SQLTaskRepository _taskRepository;
         public TasksController(AppDbContext context,IDistributedCache cache,
             ICacheService cacheService, RabbitMqService rabbitMqService)
         {
@@ -26,6 +29,7 @@ namespace TodoAPI.Controllers
             _cache = cache;
             _cacheService = cacheService;
             _rabbitMqService = rabbitMqService;
+            _taskRepository = new SQLTaskRepository(context);
         }
 
         // GET: api/tasks/all
@@ -38,7 +42,7 @@ namespace TodoAPI.Controllers
             if (cachedTasks != null)
                 return Ok(cachedTasks);
 
-            var tasks = await _context.Tasks.OrderByDescending(t => t.CreatedAt).ToListAsync();
+            var tasks = await GetAllTasks();
             await _cacheService.SetAsync(cacheKey, tasks, TimeSpan.FromMinutes(5));
 
             return Ok(tasks);
@@ -47,7 +51,7 @@ namespace TodoAPI.Controllers
         // GET: api/tasks
         // Поиск, фильтрация, пагинация
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Tasks>>> GetTasks(
+        public async Task<ActionResult<List<Tasks>>> GetTasks(
             [FromQuery] string? search,
             [FromQuery] string? status,
             [FromQuery] int page = 1,
@@ -64,36 +68,18 @@ namespace TodoAPI.Controllers
             {
                 return Ok(cachedResult);
             }
-
-            var query = _context.Tasks.AsQueryable();
-
-            if (!string.IsNullOrEmpty(search))
-            {
-                query = query.Where(t => t.Title.ToLower().Contains(search.ToLower()));
-            }
-            if (!string.IsNullOrEmpty(status))
-            {
-                query = query.Where(t => t.Status.ToLower() == status.ToLower());
-            }
-
-            var total = await query.CountAsync();
-            var items = await query.OrderByDescending(t => t.CreatedAt)
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .ToListAsync();
+            var items = await _taskRepository.GetPaginationTasks(search, status, page, pageSize);
 
             var result = new
             {
-                total,
                 page,
                 pageSize,
                 items
             };
-
             await _cacheService.SetAsync(cacheKey, result,
                 TimeSpan.FromMinutes(5));
 
-            return Ok(result);
+            return Ok();
         }
 
 
@@ -107,7 +93,7 @@ namespace TodoAPI.Controllers
             if (cachedTasks != null)
                 return Ok(cachedTasks);
 
-            var task = await _context.Tasks.FindAsync(id);
+            var task = await _taskRepository.GetByIdAsync(id);
             if (task == null) return NotFound();
             await _cacheService.SetAsync(cacheKey, task,
                 TimeSpan.FromMinutes(5));
@@ -121,8 +107,7 @@ namespace TodoAPI.Controllers
         {
             
             task.CreatedAt = DateTime.UtcNow;
-            _context.Tasks.Add(task);
-            await _context.SaveChangesAsync();
+            await _taskRepository.CreateAsync(task);
 
             await _cache.RemoveAsync("all_tasks");
 
@@ -135,21 +120,12 @@ namespace TodoAPI.Controllers
         {
 
             if (id != task.Id) return BadRequest();
-
-            var existing = await _context.Tasks.FindAsync(id);
-            if (existing == null) return NotFound();
-
-            if(existing.Status != task.Status)
+            await _taskRepository.UpdateAsync(task);
+            _rabbitMqService.Publish("task.status.changed", new
             {
-                _rabbitMqService.Publish("task.status.changed", new { TaskId = id,
-                    NewStatus = task.Status });
-            }
-            existing.Title = task.Title;
-            existing.Description = task.Description;
-            existing.Status = task.Status;
-
-            await _context.SaveChangesAsync();
-
+                TaskId = task.Id,
+                NewStatus = task.Status
+            });
             await _cache.RemoveAsync("all_tasks");
 
             return NoContent();
@@ -161,11 +137,10 @@ namespace TodoAPI.Controllers
         {
             var task = await _context.Tasks.FindAsync(id);
             if (task == null) return NotFound();
-
-            _context.Tasks.Remove(task);
+            await _taskRepository.DeleteAsync(task);
             await _context.SaveChangesAsync();
             await _cache.RemoveAsync("all_tasks");
             return NoContent();
         }
     }
-}
+

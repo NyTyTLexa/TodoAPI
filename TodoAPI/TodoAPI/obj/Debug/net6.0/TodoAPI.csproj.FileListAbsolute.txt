@@ -80,3 +80,4 @@ C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPI\TodoAPI\bin\Debug\net6.0\System.Th
 C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPI\TodoAPI\bin\Debug\net6.0\Grpc.AspNetCore.Web.dll
 C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPI\TodoAPI\bin\Debug\net6.0\Grpc.AspNetCore.Server.Reflection.dll
 C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPI\TodoAPI\bin\Debug\net6.0\Grpc.Reflection.dll
+C:\Users\Ardor\Desktop\Test\TestIntis\TodoAPI\TodoAPI\obj\Debug\net6.0\TodoAPI.sourcelink.json

@@ -1,8 +1,7 @@
 ﻿using System.Text.Json;
 using Microsoft.Extensions.Caching.Distributed;
+using TodoAPI.Interface;
 namespace TodoAPI.Service;
-
-
 public class RedisCacheService : ICacheService
 {
     private readonly IDistributedCache _cache;

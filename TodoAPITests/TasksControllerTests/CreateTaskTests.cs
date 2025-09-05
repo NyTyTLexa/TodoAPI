@@ -4,6 +4,7 @@ using Microsoft.Extensions.Caching.Distributed;
 using Moq;
 using TodoAPI.Controllers;
 using TodoAPI.Data;
+using TodoAPI.Interface;
 using TodoAPI.Models;
 using TodoAPI.Service;
 

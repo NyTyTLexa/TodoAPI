@@ -4,6 +4,7 @@ using System.Data;
 using Npgsql;
 using TodoAPI.Service;
 using TodoAPI.Models;
+using TodoAPI.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 

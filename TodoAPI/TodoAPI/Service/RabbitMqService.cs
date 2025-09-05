@@ -4,8 +4,8 @@ using System.Text;
 using System.Text.Json;
 using TodoAPI.Models;
 
-namespace TodoAPI.Service
-{
+namespace TodoAPI.Service;
+
 public class RabbitMqService
     {
         private readonly IConnection _connection;
@@ -43,4 +43,4 @@ public class RabbitMqService
         }
     }
 
-}
+
