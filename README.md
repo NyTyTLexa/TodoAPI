@@ -7,11 +7,11 @@
 ### Запуск
 ```bash
 git clone https://github.com/NyTyTLexa/TodoAPI.git
-cd TodoAPI
+cd TodoAPI/TodoAPI/TodoAPI
 docker-compose up -d
 ```
 API будет доступен по адресу: http://localhost:80
-Swagger UI: http://localhost:5000/swagger
+Swagger UI: http://localhost:5000
 ## Что реализовано дополнительно
 ### Redis кэширование
 Добавил кэширование для GET запросов. Кэш живет 5 минут и автоматически сбрасывается при изменении данных.
